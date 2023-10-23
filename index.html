@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <a href="https://github.com/milosPavla">
+                <img src="images/logo.png" alt="logo">
+                <br>
+                mpavlovic.business@gmail.com
+            </a>
+        </div>
+        
+        <form action="" method="post">
+            <div class="text-div">
+                <p>
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+                    <br><br>
+                    You know you want it.
+                </p>
+            </div>
+
+            <fieldset id="contact-information">
+
+                <h2>Let's do this!</h2>
+
+                <div class="inputs">
+
+                    <div class="col-1">
+                        <label for="user-first-name">First name</label>
+                        <input type="text" id="user-first-name" name="user-first-name" required>
+    
+                        <label for="user-email">Email</label>
+                        <input type="email" id="user-email" name="user-email" required>
+    
+                        <label for="user-password">Password</label>
+                        <input type="password" id="user-password" name="user-password" required>
+                    </div>
+    
+                    <div class="col-2">
+                        <label for="user-last-name">Last name</label>
+                        <input type="text" id="user-last-name" name="user-last-name" required>
+    
+                        <label for="user-number">Number</label>
+                        <input type="number" id="user-number" name="user-number" required>              
+    
+                        <label for="user-confirm-password">Confirm password</label>
+                        <input type="password" id="user-confirm-password" name="user-confirm-password" required>
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+            <fieldset id="submit-field">
+                <button type="submit" id="submit-btn">Create account</button><br>
+                Already have an account? <a href="#">Log in</a>
+            </fieldset>
+        </form>
+        
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

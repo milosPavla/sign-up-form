@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/simple-office-cafeteria.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(75, 75, 75);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.logo-container {
+    flex: 2;
+    text-align: center;
+}
+
+.logo-container img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: rgb(75, 75, 75);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(255, 255, 244);
+}
+
+form * {
+    flex: 1;
+}
+
+form .text-div {
+    width: 800px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-top: 70px;
+}
+
+form #contact-information {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(243, 243, 234);
+}
+
+form h1 {
+    padding-left: 20px;
+}
+
+form #contact-information * {
+    flex: 1;
+}
+
+#contact-information .inputs {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+}
+
+#contact-information .inputs .col-1, .col-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.col-1 input, .col-2 input {
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+#submit-field {
+    border: 0;
+}
+
+#submit-field #submit-btn {
+    background-color: rgb(47, 109, 150);
+    margin: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#submit-field #submit-btn:hover {
+    background-image: linear-gradient(to top, rgb(47, 109, 150), rgb(127, 187, 228));
+    cursor: pointer;
+}
+
+.false {
+    border: 2px solid rgb(184, 73, 73) !important;
+    background-color: rgb(255, 197, 197);
+}
